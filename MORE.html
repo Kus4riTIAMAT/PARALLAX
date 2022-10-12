@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="MORE.css">
+        <title>EPHORIA</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">MOON</a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="WEB.html" class="active">HOME</a></li>
+                    <li><a href="#">PAYMENT</a></li>
+                    <li><a href="#">MORE</a></li>
+                    <li><a href="Section.html">SECTION</a></li>
+                </ul>
+            </div>
+        </header>
+        <section>
+            <img src = "stars.png" id = "bg">
+            <img src = "moon.png" id = "moon">
+            <img src = "mountains_behind.png" id = "mountains_behind">
+            <h2 id = "teks">The Moon</h2>
+            <a href="#second" id = "tombol">EXPLORE!</a>
+            <img src = "mountains_front.png" id = "mountain_front">
+            <!--<img src = "road.png" id = "road">-->
+        </section>
+        <div class="second" id = "second">
+            <h2>THE SCROLLING EFFECTS</h2>
+            <p>Lori lived her life through the lens of a camera. She never realized this until this very moment as she scrolled through thousands of images on your computer. She could remember the exact moment each photo was taken. She could remember where she had been, what she was thinking as she tried to get the shot, the smells of the surrounding area, and even the emotions that she felt taking the photo, yet she had trouble remembering what she had for breakfast.<br><br>    It's always good to bring a slower friend with you on a hike. If you happen to come across bears, the whole group doesn't have to worry. Only the slowest in the group do. That was the lesson they were about to learn that day.<br><br> There was only half a worm in the apple. At first, Judy didn't quite comprehend what this meant. "Why would only half a worm be living in an apple?" she wondered. And then it dawned on her. Judy quickly spit out the bite she had just taken expecting to see the other half of the worm. It ended up being much worse than that.<br><br>    I haven't bailed on writing. Look, I'm generating a random paragraph at this very moment in an attempt to get my writing back on track. I am making an effort. I will start writing consistently again!ori lived her life through the lens of a camera. She never realized this until this very moment as she scrolled through thousands of images on your computer. She could remember the exact moment each photo was taken. She could remember where she had been, what she was thinking as she tried to get the shot, the smells of the surrounding area, and even the emotions that she felt taking the photo, yet she had trouble remembering what she had for breakfast.<br><br>    It's always good to bring a slower friend with you on a hike. If you happen to come across bears, the whole group doesn't have to worry. Only the slowest in the group do. That was the lesson they were about to learn that day.<br><br> There was only half a worm in the apple. At first, Judy didn't quite comprehend what this meant. "Why would only half a worm be living in an apple?" she wondered. And then it dawned on her. Judy quickly spit out the bite she had just taken expecting to see the other half of the worm. It ended up being much worse than that.<br><br>    I haven't bailed on writing. Look, I'm generating a random paragraph at this very moment in an attempt to get my writing back on track. I am making an effort. I will start writing consistently again!</p>
+        </div>
+        <script>
+            let stars = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountains_behind");
+            let mountains_front = document.getElementById("mountains_front");
+            let btn = documen.getElementById("tombol");
+            //let road = document.getElementById("road");
+            let tulisan = document.getElementById("teks");
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * -0.5 + 'px';
+                mountain.style.top = -value * 0.25 + 'px';
+                mountain_front.style.top = -value * 0.25 + 'px';
+                btn.style.top = -value *0.25 +'px';
+                tulisan.style.left = value * 1 + 'px';
+                //road.style.top = value * 0.15 + 'px';
+            })
+        </script>
+    </body>
+</html>
